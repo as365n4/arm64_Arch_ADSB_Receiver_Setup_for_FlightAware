@@ -67,7 +67,7 @@ Use `cgps` or `gpsmon` to check GPS data and position.
 
     git clone https://aur.archlinux.org/tclx.git
     cd tclx
-    nano PKGBUILD			                          set arch to ‘any’
+    nano PKGBUILD						set arch to ‘any’
     makepkg -si
     cd ..
 
@@ -93,7 +93,7 @@ Use `cgps` or `gpsmon` to check GPS data and position.
 
     git clone https://aur.archlinux.org/dump1090-fa-git.git
     cd dump1090-fa-git
-    nano PKGBUILD                               set arch to ‘any’
+    nano PKGBUILD						set arch to ‘any’
     makepkg -si
     cd ..
 
@@ -105,17 +105,17 @@ Use `cgps` or `gpsmon` to check GPS data and position.
 
     git clone https://aur.archlinux.org/piaware-git.git
 	  cd piaware-git
-  	nano PKGBUILD			                          set arch to ‘any’
+  	nano PKGBUILD			                        set arch to ‘any’
 	  makepkg -si
 	  cd ..
 
 `sudo nano /etc/piaware.conf`
 
-    FlightAwareUser				                      remove line
-	  FlightAwarePassword			                    remove line
+    FlightAwareUser				            remove line
+	  FlightAwarePassword			            remove line
 	  piaware-config allow-auto-updates no
 	  piaware-config allow-manual-updates no	    change to yes
-	  piaware-config feeder-id XXXXX              replace X with Unique Identifier found on FlightAware web site.
+	  piaware-config feeder-id XXXXX              	    replace X with Unique Identifier found on FlightAware web site.
 
 `sudo systemctl enable piaware`
 
